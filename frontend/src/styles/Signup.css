@@ -1,0 +1,101 @@
+.signup-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 90px;
+}
+
+.signup-page-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: rgb(64, 64, 64);
+}
+
+.user-type {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px;
+}
+
+.user-type label {
+  margin-right: 20px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+  appearance: none;
+  border: 1.7px solid #000000;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 6px;
+  border-color: rgb(53, 53, 53);
+}
+
+input[type="radio"]::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  border-radius: 2px;
+  background-color: #fff;
+  border-color: black;
+}
+
+input[type="radio"]:checked::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  border-radius: 2px;
+  border-color: black;
+  background-color: rgb(43, 186, 43);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  margin-bottom: 20px;
+  padding: 10px 60px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+button[type="submit"] {
+  background-color: #115740;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 40px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(30, 134, 30);
+}

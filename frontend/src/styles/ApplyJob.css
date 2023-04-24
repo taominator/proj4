@@ -1,0 +1,93 @@
+.apply-job-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.job-card {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.job-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.job-company {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.job-location {
+  margin-bottom: 10px;
+}
+
+.job-description {
+  margin-bottom: 20px;
+}
+
+.apply-job-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #115740;
+  text-shadow: 2px 2px 4px #0a3527;
+}
+
+.apply-job-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-field {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.apply-job-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.apply-job-btn:hover {
+  background-color: #0069d9;
+}
+
+@media screen and (max-width: 600px) {
+  .job-card,
+  .apply-job-form {
+    width: 100%;
+  }
+}
