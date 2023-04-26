@@ -12,6 +12,7 @@ import MyApplications from './components/MyApplications';
 import MyJobs from './components/MyJobs';
 import CreateJob from './components/CreateJob';
 import SeeApplications from './components/SeeApplications';
+import EditJob from './components/EditJob';
 import { AuthProvider } from "./components/AuthContextProvider";
 
 
@@ -34,6 +35,7 @@ function App() {
           <Route path="/employerJobs" element={<MyJobs />} />
           <Route path="/createjob" element={<CreateJob />} />
           <Route path="/employerJobs/job/:jobId" element={<SeeApplications />} />
+          <Route path="/employerJobs/:jobId" element={<EditJob />} />
         </Routes>
       </Router>
       </AuthProvider>

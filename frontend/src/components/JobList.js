@@ -4,90 +4,6 @@ import '../styles/JobList.css'
 import Header from './Header';
 import axios from 'axios';
 
-//const jobs = [
-  // {
-  //   id: 1,
-  //   title: 'Web Developer',
-  //   company: 'Google',
-  //   location: 'Mountain View, CA',
-  //   description: 'We are looking for a skilled web developer to join our team',
-  // },
-  // {
-  //   id: 2,
-  //   title: 'Software Engineer',
-  //   company: 'Facebook',
-  //   location: 'Menlo Park, CA',
-  //   description: 'We are seeking a talented software engineer to work on our platform',
-  // },
-  // {
-  //   id: 3,
-  //   title: 'Data Analyst',
-  //   company: 'Microsoft',
-  //   location: 'Redmond, WA',
-  //   description: 'We are looking for a data analyst to help us make sense of our data',
-  // },
-  // {
-  //   id: 1,
-  //   title: 'Web Developer',
-  //   company: 'Google',
-  //   location: 'Mountain View, CA',
-  //   description: 'We are looking for a skilled web developer to join our team',
-  // },
-  // {
-  //   id: 2,
-  //   title: 'Software Engineer',
-  //   company: 'Facebook',
-  //   location: 'Menlo Park, CA',
-  //   description: 'We are seeking a talented software engineer to work on our platform',
-  // },
-  // {
-  //   id: 3,
-  //   title: 'Data Analyst',
-  //   company: 'Microsoft',
-  //   location: 'Redmond, WA',
-  //   description: 'We are looking for a data analyst to help us make sense of our data',
-  // },
-  // {
-  //   id: 1,
-  //   title: 'Web Developer',
-  //   company: 'Google',
-  //   location: 'Mountain View, CA',
-  //   description: 'We are looking for a skilled web developer to join our team',
-  // },
-  // {
-  //   id: 2,
-  //   title: 'Software Engineer',
-  //   company: 'Facebook',
-  //   location: 'Menlo Park, CA',
-  //   description: 'We are seeking a talented software engineer to work on our platform',
-  // },
-  // {
-  //   id: 3,
-  //   title: 'Data Analyst',
-  //   company: 'Microsoft',
-  //   location: 'Redmond, WA',
-  //   description: 'We are looking for a data analyst to help us make sense of our data',
-  // },
-//];
-
-// function JobList() {
-
-
-
-
-//   return (
-//     <div>
-//       {jobs.map(job => (
-//         <div key={job.id} className="card">
-//           <h2>{job.title}</h2>
-//           <p>{job.description}</p>
-//           <p>{job.company}</p>
-//           <p>{job.location}</p>
-//         </div>
-//       ))}
-//     </div>
-//   );
-// }
 
 
 const config = () => {
@@ -115,7 +31,7 @@ const JobList = () => {
     const data = {
       a_student_id : JSON.parse(localStorage.getItem('student')).id,
       a_job_id : jobId,
-      application_status : 'Applied'
+      application_status : 'Pending'
     }
 
     try{

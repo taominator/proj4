@@ -14,8 +14,8 @@ export default function Home() {
   useEffect( () => {
     setIsStudentLoggedIn(getStudentFromLocalStorage);
     setIsEmployerLoggedIn(getEmployerFromLocalStorage);
-    console.log(isStudentLoggedIn);
-    console.log(isEmployerLoggedIn);
+    // console.log(isStudentLoggedIn);
+    // console.log(isEmployerLoggedIn);
   }, [])
 
 

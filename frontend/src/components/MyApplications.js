@@ -65,6 +65,7 @@ return (
                 <h3>{application.employer_name}</h3>
                 <p>{application.employer_email}</p>
                 <p>{application.job_description}</p>
+                <p>{application.application_status}</p>
               <button className='delete' onClick={() => handleDelete(application.student_id, application.job_id)}>
                 Delete
               </button>

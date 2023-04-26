@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from 'react'
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import '../styles/Header.css'
 import { AuthContext } from "./AuthContext";
 import { useContext } from "react";
@@ -14,8 +14,8 @@ export default function Header() {
   useEffect( () => {
     setIsStudentLoggedIn(getStudentFromLocalStorage);
     setIsEmployerLoggedIn(getEmployerFromLocalStorage);
-    console.log(isStudentLoggedIn);
-    console.log(isEmployerLoggedIn);
+    // console.log(isStudentLoggedIn);
+    // console.log(isEmployerLoggedIn);
   }, [])
 
   
@@ -31,8 +31,8 @@ export default function Header() {
     if (student) {
       localStorage.removeItem('student');
     }
-
-    
+    Navigate('/')
+    window.location.reload();
 
     // Navigate to the home page or any other desired page
     //navigate('/');

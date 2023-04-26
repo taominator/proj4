@@ -23,6 +23,41 @@ const config = () => {
 
 
 
+  // const acceptApplication = async (student_id, job_id) => {
+  //   const data = {
+  //       application_status : 'Accepted',
+  //   }
+
+  //       console.log(data);
+  //       console.log(config());
+  //       const response = await axios.post(`http://localhost:5000/application/${student_id}/${job_id}`, data, config());
+  //       console.log(response);
+  //       alert("Updated");
+  
+  // }
+
+
+  // const rejectApplication = async (student_id, job_id) => {
+  //   const data = {
+  //       application_status : 'Rejected',
+  //   }
+
+  //       console.log(data);
+  //       console.log(config());
+  //       const response = await axios.post(`http://localhost:5000/application/${student_id}/${job_id}`, data, config());
+  //       console.log(response);
+  //       alert("Updated");
+  //       applications = [...applications, response.data];
+  
+  // }
+
+
+
+const SeeApplications = () => {
+  const [applications, setApplications] = useState([]);
+  const navigate = useNavigate();
+  const { jobId } = useParams();
+
   const acceptApplication = async (student_id, job_id) => {
     const data = {
         application_status : 'Accepted',
@@ -47,37 +82,9 @@ const config = () => {
         const response = await axios.post(`http://localhost:5000/application/${student_id}/${job_id}`, data, config());
         console.log(response);
         alert("Updated");
+        //applications = [];
   
   }
-
-
-
-const SeeApplications = () => {
-  const [applications, setApplications] = useState([]);
-  const navigate = useNavigate();
-  const { jobId } = useParams();
-
-//   const handleApply = async (jobId) => {
-//     // navigate(`/apply/${jobId}`);
-
-//     const data = {
-//       a_student_id : JSON.parse(localStorage.getItem('student')).id,
-//       a_job_id : jobId,
-//       application_status : 'Applied'
-//     }
-
-//     try{
-//       console.log(data);
-//       console.log(config());
-//       const response = await axios.post('http://localhost:5000/application/', data, config());
-//       console.log(response);
-//       alert("Thank you for applying!");
-//     }
-//     catch (e) {
-//       alert("Already applied to this job.");
-//     }
-
-//   };
 
 
 

@@ -39,6 +39,10 @@ const MyJobs = () => {
         }
     }
 
+    const handleEditJob = (job_id) => {
+      navigate(`${job_id}`);
+    }
+
 
     useEffect(() => {
         const employer_id = JSON.parse(localStorage.getItem('employer')).id;
@@ -75,6 +79,9 @@ return (
               </button>
               <button className='delete' onClick={() => handleSeeApplicants(job.job_id)}>
                 See Applicants
+              </button>
+              <button className='delete' onClick={() => handleEditJob(job.job_id)}>
+                Edit
               </button>
             </div>
           ))}
